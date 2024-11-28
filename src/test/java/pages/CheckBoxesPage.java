@@ -37,8 +37,6 @@ public class CheckBoxesPage extends BasePage{
         List<WebElement> checkboxes = driver.findElements(CHECK_BOX);
         int count = 0;
 
-        activatedAllCheckBox();
-
         for (WebElement checkbox: checkboxes){
             if (checkbox.isSelected()){
                 checkbox.click();
